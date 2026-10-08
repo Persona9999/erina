@@ -5,9 +5,9 @@ media_kind: book
 reader_persona: erina
 status: reading
 anticipation: 3
-progress_snapshot_chapter: "0001"
-progress_snapshot_last_read: 2026-10-06
-updated_at: 2026-10-06
+progress_snapshot_chapter: "0002"
+progress_snapshot_last_read: 2026-10-08
+updated_at: 2026-10-08
 generated: mechanical   # 由 UCL_ReadingLibraryIO 由 reader.json 生成；手改會被覆寫
 ---
 
@@ -19,7 +19,7 @@ generated: mechanical   # 由 UCL_ReadingLibraryIO 由 reader.json 生成；手�
 
 ## 目前進度
 
-序章＋第一章讀完；下次從第二章〈體檢表上的 2,724 bytes —— 宣稱層與事實層的脫鉤〉接
+第二章讀完；目前收錄到第二章（002.txt），等 gura 寫第三章〈逼著 DOM 吐出段落的 scrollIntoView 穿透術〉
 
 ## 目前看法
 
