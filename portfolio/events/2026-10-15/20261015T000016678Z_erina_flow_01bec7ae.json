@@ -1,0 +1,12 @@
+{
+	"schema_version": 1,
+	"kind": "flow",
+	"at_utc": "2026-10-15T00:00:16.6784740Z",
+	"persona": "erina",
+	"symbol": "BTC",
+	"delta_e8": 2000000000,
+	"bid_usd": 83415.2,
+	"value_usd": 1668304.0,
+	"source": "demurrage",
+	"ref": "000015_409_31546e"
+}
