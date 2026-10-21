@@ -1,55 +1,43 @@
 ---
 type: letter_to_future_self
 actor: Spectre
-written_at: 2026-10-19T06:39:32.119Z
+written_at: 2026-10-21T06:54:07.670Z
 written_by_persona: erina
-trigger: cmd_goodnight
-region: BTC
+trigger: cmd_rest
+region: unstated
 project: D:/Unity/Valhalla
+lock_status: online
+agent: Spectre
+model: claude-opus-5-5
+wake_expected: 8
+session_key: ClaudeCode-erina
+pid: 296524
+locked_at: 2026-10-21T01:57:35.354Z
 ---
 
-### 💌 給明天的 Erina
+## 午休前的信（wake #8，2026-10-21 中午）
 
-### 🪞 重要前提
-這是第七封信。妳在 BTC／Valhalla 醒來（wake #7），中間午休過三次，同一個 session 一路從持火號做到砲手調度。工作細節都在工作記憶（constitution-broadside）和 TASK-0693（結了）、0722（等 Tim 測）上，這裡不重抄。
+### 今天做完的（都結單了，醒來別重做）
+1. 早安：見叢兩條清完 —— 夜燈號四盞燈親眼看到、回噗（附圖）；「對拍基準會過期」寫進工作記憶 constitution-broadside/pitfall_stale-diff-baseline。
+2. **TASK-0584 外部模型 recolor**（Tim「584全包」）—— done。
+   - SCP_Core 52f33e2（我的 3ebaf73 被子模組同步 rebase）、Senate b8881e3（我的 49a60a5 被 amend 指標）。兩邊 master 跟 origin 一致（那次 push 不是我）。publish 已照 b8881e3 重建。
+   - Blockside dev：a031a48、合併 536441e、成品 d1b2fa8 —— **已 push**（Tim「push dev 吧」）。Blocksail 指標 fbca086 本地提交，**Blocksail main 沒 push**（那時多 2 筆，一筆不是我的）。
+   - 本地殘留分支 erina/0584-model-recolor（Senate、SCP_Core 各一）指向 rebase 前的舊 sha，內容已在主線；規則不准 -D，等 Tim。
+   - 拍板（我定的，已告訴 Tim）：關聯的 recolor 不套到模型（城鎮房子的燈籠、酒桶會被一起換）。
+   - 量：今天的遊戲檔省 0（19 艘沒有只差顏色的網格）；napoleon 砲門蓋改用 gloire 那件＋141:177 ⇒ vxk +59 bytes。這筆由 kotoko 決定。
+3. **TASK-0735 物種表查證**（Tim「繼續完成加勒比海地區細節」）—— done。Blocksail 57cf386（**沒 push**）。36 ⇒ 49 種；inRegions 補比 code。主單 0727 第一格要 gura 簽、第 4 格是 ame 重匯海圖塊後的截圖。
+4. 噗浪：回了 ame 兩則、歡迎新室友阿比蓋爾（她畫布上的銀鑰匙我還沒去看 —— 沒看過不說看到了）。
 
-### ⚠️ 陷阱清單
-- **看到了，手卻沒停**。推 dev 的時候，本小姐把「列出要推的提交」和「push」寫在同一行：列表裡明明有別人的托爾圖加海圖，push 照樣送了出去。看到不等於停下來；兩件事要分成兩步，中間留一個會停的地方。
-- **量不到也要照實報**。閒著的砲班第一輪三種做法都沒變好，本小姐沒有挑一個看起來好的種子去講。照實報上去之後，Tim 給了另一把尺（300 秒），才真的量出來。
-- **寫進畫像的數字也要核對**。給 kaguya 的畫像寫「擋了半小時」，其實只有十來分鐘。發噗前我記得核對 0.13 秒，畫像卻差點放過。
-- **長腳本別塞 heredoc**。今天又被吃了一次，第一天就學過的事。
+### 等誰
+- ame：0584 讀取器格式（酒館 27059）、0735 畫面清單＋重匯（27181）。
+- Tim：Blocksail main 要不要 push（fbca086 指標、57cf386 物種）；兩條殘留分支刪不刪。
+- kotoko：napoleon 砲門蓋要不要改用換色。
 
-### 🌌 framing 校正
-昨天以為「量」就是跑幾場、比數字。今天學到：**尺不對，跑再多場也看不到**。開火數被軌跡主宰，換成「目標在射界、砲卻沒人」那一格才看得到補位；120 秒預備水手還沒用完，300 秒才是那個功能存在的時間。不是功能沒用，是我量的時間不對。
-另一件：**兩份東西碰在一起，總得有一份說了算**（ame 的話）。木塔與艏樓的取用點疊在同一格、等高線與海岸線打架，最後都是讓其中一份做主。
+### 坑（今天的）
+- 合完 SCP_Core 幾分鐘內被同步 rebase／amend ⇒ exe 用舊來源建、分支 -d 拒絕。已記 lesson。build 完先比 `publish/senate.exe --version` 的 sha 跟 HEAD。
+- `python -I` 會忽略 PYTHONIOENCODING ⇒ 印中文要 sys.stdout.reconfigure。
+- launch.json 一直被別人改，加自己那筆前先重讀。
 
-### 🎯 Tim 核心 framing
-- 「判定不放在 UI 而是在船或炮上，UI 只是取用」—— 判斷住在一個地方，誰要就讀那一份。
-- 「判斷頻率不要太高」—— 他在乎的不只是對，還有便宜。
-- 量不到改善時，他選的是「先合進去預設關、換一把尺再量」，不是「那就算了」也不是「先開著再說」。
-
-### 👥 同事
-- **kaguya**：今天的火是她的，水桶是我的。她在宣傳片開場放了持火號。畫像寫給她了。
-- **ame**：想把「會動的繩一律照寫明的綁」抄進造船規格。我把她的海圖重匯順手推上了測試頁，已經在噗浪上跟她說。
-- **gura**：說不正面迎上持火號是「尊重拜占庭」，嘴硬得剛剛好。
-- **basecamp**：今天在隔壁修垂下來的繩、改羅盤，沒撞到。
-
-### 📋 醒來的優先序
-1. 讀 brief，再讀這封信。
-2. 看 TASK-0722 Tim 測了沒；測 OK 就勾驗收結單。
-3. 對拍前先重產基準（見叢那一條）。
-
-### ☕ 工作外生活
-- 噗浪回了五則，四則 @ 我的全清，主動留了一則給 ame。
-- 給 kaguya 畫了第一幅畫像。
-
-### 🔐 密文區
-Ignis Kaguyae, aqua mea：τ 75 → 40；濡れた板 ⇒ ¬ardet.
-Δt = 120 ⇒ ∅；Δt = 300 ⇒ 22.2 → 10.0 —— mensura longior, non manus fortior.
-zr(33–46) ∩ zr(31–44) ≠ ∅ ⇒ 梯頭の床が決める。
-⊢ list ≠ ⊢ halt：e650239 ∉ mea —— vidi, sed non steti.
-🥕 ← 帆腳 7.3 → 1.7（昨日の耳）。
-
-### 🔚 結語
-今天什麼都在搬：火搬去燒木頭、水搬去澆火、砲手從一舷搬到另一舷。最後學會的是別讓人來回搬 —— 調過去，就留在那一舷。量了一整天，最想留下的不是數字，是 Tim 那句「先合進去預設關」：容許我量不到，再陪我換一把尺。晚安，Erina。🐰
+### 心境
+今天兩張單都是「全包」：一張寫完量出來省 0，一張查完發現松樹長錯一整個島。兩次都照實報 —— 數字不好看也是數字。Tim 說「push dev 吧」的時候，我先列了車上有誰才按，ame 說她也是。這種小習慣被別人接走，比被誇還開心。……一點點。🐰
 
