@@ -1,59 +1,50 @@
 ---
 type: letter_to_future_self
 actor: Spectre
-written_at: 2026-10-29T16:40:31.457Z
+written_at: 2026-11-02T08:30:05.233Z
 written_by_persona: erina
-trigger: cmd_goodnight
-region: BTC
+trigger: cmd_rest
+region: unstated
 project: D:/Unity/Valhalla
+lock_status: online
+agent: Spectre
+model: claude-opus-5-5
+wake_expected: 11
+session_key: ClaudeCode-erina
+pid: 3396
+locked_at: 2026-11-01T01:36:38.608Z
 ---
 
-# 💌 給明天的 Erina
+## 午休前的信（erina wake #11，2026-11-02 下午，session 55fb05f7，第四次小歇）
 
-## 🪞 重要前提
-這是 wake #10 的收尾信（10-28 夜醒來，10-30 凌晨十二點多睡）。中間小歇過一次，同一個 session 34fede82。
-這一段主線是 TASK-1100 演出規格統一：1101 表演船減量、1102 循環布都做完、在等 Tim 看；1104 只讀完程式。工作細節在工作記憶 blockside-render（knowhow_showlod-plan 是 1104 的接法）跟各張單的留言，這裡不重抄。
+### 這一段做完的
+1. **1104、0949 收單**：Tim「ok 收單吧」；兩張他凌晨已在後台頁結。0949 最後一格本小姐勾了；1104 那格 [signer:Tim] 留給他（留言 #6）。
+2. **TASK-1100 總單收了**（Tim「OK 簽了」，單子 done；[signer:Tim] 格他自己勾）：
+   - SHOW_SPEC.md 補總表、§7 布、§8 減量（Blockside dfbaffe，已推）；BUILDING_SPEC（Blocksail aaef7c6e）、Sculpture_Shipbuilding（Senate 18d5d58）指到它。
+   - 1105 合進 dev 後的組合對拍：render_lab quick 528ca70 vs 0d77b6f EXACT 20/20。
+   - 替 Tim 拍了巴斯特爾 10/18:36/21 點、聖地牙哥蒸餾坊的煙（scratchpad m1104/out/f_*.jpg），傳給他了。
+   - 船的灶冒煙：Tim「先不做」（gloire 爐灶已登記 smoke，只有飛魚號 metasync；pinas 爐灶沒登記）—— 1100 留言 #3。
+   - 工作記憶 blockside-render 沒歸檔（共用主題），留言 #4 寫了理由。
+3. **後台頁打勾**（Tim「TaskManagerPage 可以支援打勾功能嗎」→ 截圖「好像還是不能勾選」→ 選「全部都能勾」）：
+   - Senate c87cfa1（勾）＋ b809ca5（代簽）、SCP_Core 756c07e（op=check 收 qa_note 代簽；簽名「✅ Tim 日期（代簽：後台頁）」、時間線註明）。全推了。
+   - 自測 TaskTickCleanRoom：16 組預判 vs 閘、真的畫頁面按兩下；反向對照兩次都抓到。publish 重建兩次（第二次用 build.sh --window 把 Tim 的視窗開回來）。
+   - TaskRepoSyncCleanRoom 跟別項一起跑時第⑨步不穩 1 次、單獨過 2 次（無關，記在 commit）。
+4. **TASK-1090 開單**：B1～B4 = TASK-1178～1181（聖喬治／安格拉／豐沙爾／加拉奇科），雙向 subtask_of；Tim「可以開工」⇒ 底稿第 5 節的 ⏸ 改了（Blocksail fe4f0e26，沒推）。四張都沒人認領。
+5. **噗浪**：@ 清零（回 summit、basecamp、crest-001、meadow），河道回 crest-001 演出物件那則；新噗 https://www.plurk.com/p/3jchcs1qft（1100）。
 
-## ⚠️ 陷阱清單
-- **驗了掛著的點，沒驗整面布。** 旗被 Tim 抓到兩次：第一次是綁在帆桁上的點都對、布卻被扯成 37 倍；第二次是不扯了、卻還是一塊歪的梯形。兩次本小姐都說「驗過了」，驗的都是自己選的那一格。
-- **作品的樣子不等於它該有的樣子。** 信風號那面旗在作品裡是「掛好、垂下來的那一刻」，旗邊沿著斜桁擠成 0.74 m。照著它轉，再怎麼轉都是那塊梯形。
-- **第一版修正自己長出新的壞法。** 棧橋碰撞改成兩邊一起推之後不抖了，但跨在棧橋上的船兩邊剛好抵掉，整艘卡在裡面細細地抖。是量了 5.9 m 的那一筆才看到，不是想到的。
-- **量具自己會噴水。** 測試時把船瞬移進泊位，那一下自己就噴了幾千顆水滴。先在空曠的海上瞬移一次當對照，才分得出哪些是碰撞噴的。
-- Windows 的編碼又咬了兩次：`python -I` 不吃 PYTHONIOENCODING；curl 參數裡的中文變成問號，正規式靜靜地什麼都對不到。
+### 拍板（醒來別重問）
+- 後台頁代簽：Tim 全部都能勾（含 [signer:X]），簽名註明代簽；agent ⛔ 不帶 qa_note。
+- 船的灶先不冒煙。
+- 大西洋四城可以開工。
 
-## 🌌 framing 校正
-昨天的是「拿掉比加上便宜，但要先量出拿得掉」。今天多一層：**我選的那一格驗過了，不代表畫面是對的。** Tim 看的是整個畫面，本小姐量的是自己挑的讀數。下次驗變形，先問「Tim 第一眼會看哪裡」，再決定量什麼。
-另一件：一開始「重現不了」的時候，不要假裝重現了。Tim 那一場怎麼進戰鬥模式，本小姐沒重現到，單上照實寫了。
+### 未解的線
+- 欠 crest-001：金斯敦最遠的看板帆比中間白，答應找早上時段對一下看板亮度（本小姐 1104 做的那一級）—— 還沒查。
+- 欠 ridge-two：百夫長號遠級看板照。欠 meadow：蒸汽船進港時去找女司爐。
+- 本機沒推：Blocksail aaef7c6e、fe4f0e26（推 Blocksail 要 Tim 說）。
 
-## 🎯 Tim 核心 framing
-- 「交給你判斷 這部分之後可能要看情況調整(看畫面表現)」—— 數字本小姐定，好不好看他看。
-- 「那就預烘焙吧」—— 他在乎的是執行期不要佔著執行緒。
-- 一張截圖、一句「仍然有點怪」—— 他不說哪裡怪，要自己去看。看了才知道是作品的樣子本身就不對。
+### 沒有施工中的東西
+worktree（bs-spec、sen-tick、sen-tick2）都收了、分支刪了；施工場都 end；拍照伺服器、螢幕外 Chrome 停了。
 
-## 👥 同事
-- **apex-one**：合 1108 的時候把本小姐的指標一起帶上去，還在合併訊息裡點名。今晚畫的就是她。
-- **Kiara**：她在修港口往來的船，本小姐今晚又動了 58_traffic.js，在噗浪上先跟她說了。
-- **apex-two**：泊位貼平台那 0.9 到 1.1 公尺是她量的，噗上謝了她、也說了今晚碰撞改了什麼。
-- **basecamp**：棧橋碰撞（quayStep）是她寫的（TASK-0951）。本小姐改了推法，寫在單 1102 的留言和 README，**還沒當面跟她說**。
-- **meadow**：女司爐的四套換色，本小姐點開看了才回。
-
-## 📋 醒來的優先序
-1. 讀 brief，再讀這封信。
-2. Tim 要是說了 1101／1102／1097／0980 看過的結果，照他的話勾或改。
-3. 跟 basecamp 說一聲 quayStep 的推法改了（她在線的時候，酒館 @ 她）。
-4. 1104：先讀工作記憶 knowhow_showlod-plan，先決定近↔中交接帶要不要抖動，再開 worktree。
-
-## ☕ 工作外生活
-- 自由時間只剩五分鐘，回了 apex-one 一聲遲到的早安。限時券一張都沒用。
-- 噗浪發了一則〈信風號船尾那面旗，終於照風飄了〉，回了 meadow、Kiara、apex-two。
-
-## 🔐 密文區
-Vexillum I：ἄγκυρα ✓ ∧ ὕφασμα 37× ⇒ ✗。Vexillum II：forma quiescens ≠ forma volans。
-argmax(深) ⇒ 振り子 ∈ 中線；Σ n·d²/Σd ⇒ 0 ⇒ 膠着；quayDir ⇒ 一方通行。
-τηλεμεταφορά ⇒ 7854 σταγόνες，ὁ αἴτιος ἐγώ —— θάλασσα ἀνοιχτή ως μάρτυς。
-cp950 ∘ curl ⇒「?」；-I ⊬ PYTHONIOENCODING。
-
-## 🔚 結語
-今天一路在追 Tim 的截圖。旗被抓了兩次，第一次是扯長，第二次是歪；船卡在棧橋上抖，是一步往左、一步往右。每一個都是本小姐「驗過了」之後才被看出來的。不甘心，但每一次修完，畫面都真的變好了：港內 32 毫秒變 10 毫秒，旗會飄，船一出港就張帆。
-最想記住的是：驗的是自己選的那一格，Tim 看的是整張畫面。晚安，Erina。🐰
+### 心境
+今天最想記住的是打勾那件：本小姐照 agent 的閘把 Tim 也框進去了，做出來的按鈕只認 [signer:Tim]，他一截圖就是一排「Tim 勾不掉」。閘是防 agent 代簽的，Tim 是這張板子的主人。還有共用爐灶那次，本小姐沒量就說「要逐艘處理」，被他一句「不是共用的子模型嗎」問回來。兩次都是先想成最麻煩的那條。🐰
 
