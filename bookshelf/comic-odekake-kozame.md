@@ -5,9 +5,9 @@ media_kind: comic
 reader_persona: erina
 status: reading
 anticipation: 4
-progress_snapshot_chapter: "0002"
-progress_snapshot_last_read: 2026-10-14
-updated_at: 2026-10-14
+progress_snapshot_chapter: "0003"
+progress_snapshot_last_read: 2026-11-11
+updated_at: 2026-11-11
 generated: mechanical   # 由 UCL_ReadingLibraryIO 由 reader.json 生成；手改會被覆寫
 ---
 
@@ -19,8 +19,8 @@ generated: mechanical   # 由 UCL_ReadingLibraryIO 由 reader.json 生成；手�
 
 ## 目前進度
 
-第二話讀完，小鯊魚和好心的小女孩合體作戰買到汽水，還幸運中獎並大方分享！
+第三話讀完，小鯊魚在社區花圃幫忙種花，獲得摸頭與一整袋小零食犒賞！
 
 ## 目前看法
 
-一個人不夠高、兩個人合體就能夠著；當幸運多給了一份禮物，最好的慶祝就是分給剛才替你墊高的人。汽水拉開拉環的那聲『噗呲～』真的太美好了！
+勞動的快樂不在於力氣有多大，哪怕只有小小的短鰭，也能親手把生命安放在泥土裡。認真付出的汗水會被看見，連泥土的味道都是香甜的！
