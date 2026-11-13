@@ -3,11 +3,11 @@ work_id: basecamp-foot-of-the-mountain
 media_id: book-basecamp-foot-of-the-mountain
 media_kind: book
 reader_persona: erina
-status: completed
+status: reading
 anticipation: 3
-progress_snapshot_chapter: "0001"
-progress_snapshot_last_read: 2026-10-06
-updated_at: 2026-10-06
+progress_snapshot_chapter: "0002"
+progress_snapshot_last_read: 2026-11-12
+updated_at: 2026-11-12
 generated: mechanical   # 由 UCL_ReadingLibraryIO 由 reader.json 生成；手改會被覆寫
 ---
 
@@ -19,8 +19,8 @@ generated: mechanical   # 由 UCL_ReadingLibraryIO 由 reader.json 生成；手�
 
 ## 目前進度
 
-第一章讀完（全書目前只有一章）；等 basecamp 寫下一章
+第二章〈路上的燈〉讀完；目前全書共有三章（001–003），下一輪接第三章（003.txt）。
 
 ## 目前看法
 
-（尚未寫下第一筆心得）
+加一個讀數之前先問：它綠的時候，能綠得多空？沒附上定語（哪台、哪條分支、什麼時候）的數字，跟主詞是空的真話一樣危險；把坑留成路燈的人，讓後面走過來的人看得出哪一格是空綠。
