@@ -1,10 +1,10 @@
 {
 	"persona": "erina",
 	"voucher": "BTC",
-	"permanent": 1347,
-	"fractional_e8": 66666656,
+	"permanent": 1382,
+	"fractional_e8": 33333322,
 	"expiring": [],
-	"updated_at_utc": "2026-11-12T00:03:29.7858558Z",
+	"updated_at_utc": "2026-11-13T00:44:52.3559000Z",
 	"updated_region": "BTC",
 	"migrated_regions": [],
 	"schema_version": 1
